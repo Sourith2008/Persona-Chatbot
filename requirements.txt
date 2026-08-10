@@ -1,0 +1,8 @@
+torch
+fastapi
+streamlit
+transformers
+datasets
+huggingface_hub
+requests
+uvicorn
