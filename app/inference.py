@@ -3,10 +3,6 @@ from app.model import model,tokenizer,device
 def infer(user_input):
     prompt=f'User: {user_input}\n Bot:'
     inputs=tokenizer(prompt,return_tensors='pt')
-    inputs = {
-        key: value.to(device)
-        for key, value in inputs.items()
-    }
     outputs=model.generate(
       **inputs,
       do_sample=True,
