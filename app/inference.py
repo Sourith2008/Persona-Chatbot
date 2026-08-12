@@ -1,5 +1,5 @@
 import torch 
-from app.model import model,tokenizer,device
+from app.model import model,tokenizer
 def infer(user_input):
     prompt=f'User: {user_input}\n Bot:'
     inputs=tokenizer(prompt,return_tensors='pt')
