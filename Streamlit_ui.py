@@ -1,4 +1,5 @@
 from app.inference import infer
+import streamlit as st
 def infer(user_input):
     prompt=f'User: {user_input}\n Bot:'
     inputs=tokenizer(prompt,return_tensors='pt')
